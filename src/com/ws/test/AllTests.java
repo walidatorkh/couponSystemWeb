@@ -26,5 +26,5 @@ public class AllTests {
 	    		        .build());
 	}
 	
-
+// /Admin/createCompanyService?User=Admin&PW=Admin&Email=OFcompany&name=nameOfCompany&CompanyPw=rassOfCompany
 }
