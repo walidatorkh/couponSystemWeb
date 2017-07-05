@@ -39,7 +39,7 @@ public class AdminService {
 	// This method is called if HTML is request
 	@Path("/createCompanyService")
 	@GET
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public CompanyResponse createCompanyService(@QueryParam("User") String user, @QueryParam("PW") String pw,
 			@QueryParam("Email") String email, @QueryParam("name") String name,
 			@QueryParam("CompanyPw") String companyPw) throws Throwable {
