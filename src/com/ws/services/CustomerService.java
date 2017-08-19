@@ -8,8 +8,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import com.ws.rsp.CustomerResponse;
-import com.ws.rsp.CompanyResponse;
 import com.ws.rsp.CouponResponse;
 
 import beans.dao.Coupon;
@@ -17,7 +15,6 @@ import beans.dao.CouponType;
 import core.cs.ClientType;
 import core.cs.CouponSystem;
 import e.Exeptions.CouponSystemsException;
-import f.Facade.CompanyFacade;
 import f.Facade.CustomerFacade;
 
 @Path("/Customer")

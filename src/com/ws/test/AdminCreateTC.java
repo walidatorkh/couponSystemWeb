@@ -15,6 +15,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
@@ -74,14 +75,14 @@ public class AdminCreateTC {
 		assertEquals("success", companyResponse.getMessage());
 
 	}
-
+	@Ignore
 	@Test
 	public void test020createCompanyWithSameName() {
 
 		
 		AllTests.token = AllTests.service.path("Admin").path("createCompanyService").queryParam("User", "Admin")
 				.queryParam("PW", "Admin").queryParam("Email", "comp1").queryParam("name", "comp0")
-				.queryParam("CompanyPw", "comp0").accept(MediaType.APPLICATION_JSON).get(String.class);
+				.queryParam("CompanyPw", "comp0").accept(MediaType.APPLICATION_XML).get(String.class);
 		System.out.println("Token: " + AllTests.token);
 
 		
@@ -97,7 +98,7 @@ public class AdminCreateTC {
 		assertEquals("error: Name exists", companyResponse.getMessage());
 
 	}
-
+	@Ignore
 	@Test
 	public void test030updateCompanyService() {
 
@@ -118,7 +119,7 @@ public class AdminCreateTC {
 		assertEquals("success", companyResponse.getMessage());
 
 	}
-
+	@Ignore
 	@Test
 	public void test040createCustomerService() {
 
@@ -141,7 +142,7 @@ public class AdminCreateTC {
 
 	}
 
-	
+	@Ignore
 	@Test
 	public void test050updateCustomerService() {
 

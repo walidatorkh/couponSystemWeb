@@ -26,5 +26,6 @@
 		<!-- //*//http://localhost:8080/Vasiliy/rest/service1/sum?a=32&b=31;*/ -->
 		<!-- //*//http://localhost:8080/coupons-web/rest/service1/sum?a=32&b=31;*/ -->
 		<!-- //*//http://localhost:8080/coupons-web/rest/admin/createCompanyService  -->
+		<!-- http://localhost:8080/coupons-web/restfulweb/Admin/createCompanyService?User=Admin&PW=Admin&Email=comp1&name=comp1&CompanyPw=comp1-->
 	</servlet-mapping>
 </web-app>
